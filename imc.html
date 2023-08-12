@@ -1,0 +1,49 @@
+<meta charset="utf-8">
+
+<script > 
+function saltarlinea(){
+	document.write('<br>'); 
+	document.write('<br>'); 
+	document.write('<br>'); 
+}
+function imprimir(frase){
+document.write(frase);
+saltarlinea();
+}
+
+
+    
+function calcularimc2(peso, altura){
+    
+    return(peso/ (altura*altura));
+}
+
+nombre = prompt("informe su nombre");
+pesoInformado = prompt("informe su peso");
+alturaInformada = prompt("informe su talla");
+imccalculado = calcularimc2(pesoInformado, alturaInformada);
+
+if(imccalculado<18.5){
+    imprimir("el imc calculado de "+ nombre +" es igual a "+ imccalculado+" y es considarado bajo");
+}else  if(25>imccalculado>=18.5){
+
+    if(imccalculado<25){
+    imprimir("el imc calculado de "+ nombre +" es igual a "+ imccalculado + " y es considerado en su peso ideal");
+}
+
+}else if(imccalculado<30){
+
+    if(imccalculado>=25){
+    imprimir("el imc calculado de "+ nombre +" es igual a "+ imccalculado + " y eso concidaredo sobrepeso");
+}
+
+}else if(imccalculado>=30){
+    imprimir("el imc calculado de "+ nombre +" es igual a "+ imccalculado + " y es considerado obesidad");
+}
+
+
+
+
+
+		
+</script>

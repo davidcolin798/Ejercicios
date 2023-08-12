@@ -1,0 +1,35 @@
+<meta charset="utf-8">
+<h1>programa para calcular los puntos de un equipo</h1>
+
+<script > 
+function saltarlinea(){
+	document.write('<br>'); 
+	document.write('<br>'); 
+	document.write('<br>'); 
+}
+function imprimir(frase){
+document.write(frase);
+saltarlinea();
+}
+ var victorias =parseInt( prompt("informe la cantidad de victorias"));
+ var empates = parseInt(prompt("informe la cantidad de empates"));
+
+ puntosTotal = (victorias*3)+empates;
+ imprimir("el total de puntos del equipo es: " + puntosTotal);
+
+if(puntosTotal>28){
+    imprimir('el equipo esta mejor que el anio pasado');
+}else if(puntosTotal<28){
+    imprimir("el equipo esta peor que el anio pasado");
+}else if(puntosTotal==28){
+    imprimir("el equipo esta igual que el anio pasado")
+}else{
+    imprimir("el numero asignado no es correcto");
+}
+
+ 
+ 
+
+
+		
+</script>
